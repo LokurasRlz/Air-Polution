@@ -1,23 +1,32 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import Missions from './components/Missions/missions';
-import RocketContainer from './components/Rockets/rocketContainer';
-import Profile from './components/Profile/profile';
-import NavBar from './components/NavBar';
-import store from './redux/configureStore';
+import React, { useEffect } from 'react';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import getAllCities from './redux/place/thunk';
+// import PlaceContainer from './components/place/PlaceContainer';
+import AutoForm from './components/autoComplete/AutoForm';
+import WeatherContainer from './components/weather/WeatherContainer';
+import Header from './components/header/Header';
 import './App.css';
 
-const App = () => (
-  <Provider store={store}>
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<RocketContainer />} />
-        <Route path="/missions" element={<Missions />} />
-        <Route path="/my-profile" element={<Profile />} />
-      </Routes>
-    </BrowserRouter>
-  </Provider>
-);
+const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllCities());
+  }, [dispatch]);
+
+  return (
+    <>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AutoForm />} />
+          <Route path="/details/:city" element={<WeatherContainer />} />
+        </Routes>
+      </BrowserRouter>
+
+    </>
+  );
+};
 
 export default App;

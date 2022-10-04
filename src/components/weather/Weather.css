@@ -1,0 +1,289 @@
+.loading {
+  transform: translate(0, 50vh);
+  font: normal bolder 1rem 'Poppins', sans-serif;
+}
+
+.card {
+  color: rgb(255, 255, 255);
+  transform: translate(0, 10%);
+  width: 90vw;
+  box-shadow: 1px 5px 10px;
+  padding: 10px 0;
+  margin-left: 10px;
+  border-radius: 40px;
+  background-image: #cd4075 ;
+}
+
+.weather{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  margin-bottom: 30vh;
+}
+
+.cards {
+  color: rgb(255, 255, 255);
+  transform: translate(0, 10%);
+  box-shadow: 1px 5px 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 2vh;
+  background-image: rgb(251, 81, 147);
+}
+
+.cardsIcon {
+  align-items: center;
+  justify-content: center;
+}
+
+.cardsText{
+  color: black;
+  font-weight: bold;
+}
+
+.cards:nth-child(odd) {
+  background-color: #cd4075;
+}
+
+.weather-icon{
+  max-width: 5rem;
+  max-height: 5rem;
+  margin: 0 auto;
+  align-items: center;
+  align-self: center;
+}
+
+.randomImage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+}
+
+.cityImage {
+  max-width: 30vw;
+  max-height: 50vw;
+  min-height: 15rem;
+  min-width: 20rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.mainCity {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardTitle h1 {
+  text-align: center;
+  font: normal bold 1rem 'Poppins', sans-serif;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardBody .topSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topSection .cityName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.cityName .cityMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.cityMore p {
+  font: normal bold 0.8rem 'Nunito', sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.cardHeader h3 {
+  font: normal bolder 1rem 'Poppins', sans-serif;
+}
+
+.country {
+  font: normal bolder 1.5rem 'Poppins', sans-serif;
+  display: none;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.bottomSection ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.bottomSection ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.bottomSection ul li p {
+  font: normal bold 0.8rem 'Poppins', sans-serif;
+}
+
+.bxDir {
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.bottomSection h3 {
+  text-align: center;
+  font: normal bold 1rem 'Poppins', sans-serif;
+}
+
+.controlMenu .controls {
+  display: flex;
+  justify-content: left;
+}
+
+.controlMenu .controls li {
+  margin-left: 20px;
+}
+
+.controlBtn {
+  color:#cd4075;
+  transform: translate(0, 10%);
+  box-shadow: 1px 5px 10px;
+  outline: none;
+  border: none;
+  padding: 0 5px;
+  margin: 0 auto;
+  transition: all 0.5s;
+  background-image: #cd4075;
+}
+
+.controlBtn:focus {
+  outline: none;
+  border: none;
+  transform: scale(0);
+}
+
+.controlBtn:hover {
+  outline: none;
+  border: none;
+  transform: scale(1, 1);
+}
+
+.oneBtn {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+}
+
+.twoBtn {
+  cursor: not-allowed;
+}
+
+.threeBtn {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: not-allowed;
+}
+
+.suggestions,
+.results {
+  margin: 15px 0;
+  font: normal bold 2.5rem 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .cardBody {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .cardHeader {
+    justify-content: center;
+  }
+
+  .cardTitle h1 {
+    display: none;
+  }
+
+  .country {
+    display: inline;
+  }
+
+  .controlMenu .controls {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 70%;
+    padding: 40px;
+  }
+
+  .cardBody {
+    gap: 15px;
+  }
+
+  .cityMore p {
+    font-size: 1rem;
+  }
+
+  .bottomSection {
+    text-align: center;
+    font: normal bold 1rem 'Poppins', sans-serif;
+  }
+
+  .bottomSection h3 {
+    text-align: center;
+    font: normal bold 1.2rem 'Poppins', sans-serif;
+  }
+
+  .baro {
+    width: 60px;
+  }
+
+  .controlMenu .controls {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .card {
+    width: 50%;
+    padding: 40px;
+  }
+
+  .controlMenu .controls {
+    margin-left: 150px;
+  }
+}

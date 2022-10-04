@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap');
+
+.searchResults {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 0 10px;
+  gap: 5px;
+  text-align: center;
+  background-color: rgb(251, 81, 147) ;
+}
+
+.searchResults button {
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.search .results {
+  text-align: center;
+  font: normal 300 1.2rem 'Lato', sans-serif;
+}
+
+.notFound {
+  text-align: center;
+  padding: 10px;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.searchForm input {
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  font: normal 300 0.8rem 'Lato', sans-serif;
+  border: 1px solid rgb(251, 81, 147);
+  width: 40%;
+}
+
+.searchForm button {
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  text-size-adjust: 100%;
+  font: normal 300 0.8rem 'Lato', sans-serif;
+  color: #fff;
+  border: 1px solid rgb(251, 81, 147);
+  background-image: linear-gradient(to bottom right, rgb(251, 81, 147), rgba(0, 0, 0, 0.829));
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.searchForm button:hover {
+  background-color:  rgba(0, 0, 0, 0.829);
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.locationCard{
+  background-color: rgb(251, 81, 147) ;
+  margin-bottom: 10vh;
+}
+
+.locationCard:nth-child(odd) {
+  background-color: #cd4075 ;
+  border-radius: 0.5rem;
+     
+}
+
+.locationCard:nth-child(even) {
+  border-radius: 0.5rem;
+   
+}
+
+@media screen and (min-width: 768px) {
+  .searchResults {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    margin: 0 10px;
+    gap: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .searchResults {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin: 0 100px;
+    gap: 5px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .searchResults {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin: 0 150px;
+    gap: 5px;
+  }
+}
