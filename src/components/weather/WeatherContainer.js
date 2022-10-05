@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import getWeather from '../../redux/weather/weather'; // eslint-disable-line
+import getWeather from '../../redux/Weather/weather';
 import WeatherDetails from './Weatherdetails';
 import Spinner from '../spinners/Spinner';
 import './Weather.css';
