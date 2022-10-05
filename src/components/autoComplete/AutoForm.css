@@ -6,7 +6,22 @@
   margin: 0 10px;
   gap: 5px;
   text-align: center;
-  background-color: rgb(251, 81, 147) ;
+  background-color: rgb(251, 81, 147);
+}
+
+.searchForm button {
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  text-size-adjust: 100%;
+  font: normal 300 0.8rem 'Lato', sans-serif;
+  color: #fff;
+  border: 1px solid rgb(251, 81, 147);
+  background-image: linear-gradient(to bottom right, rgb(251, 81, 147), rgba(0, 0, 0, 0.829));
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .searchResults button {
@@ -19,9 +34,8 @@
   background-color: rgb(251, 81, 147);
   color: white;
   transform: scale(1.1);
-  box-shadow: #fff 0px 0px 10px;
+  box-shadow: #fff 0 0 10px;
   transition: all 0.2s;
-
 }
 
 .search .results {
@@ -51,62 +65,45 @@
   width: 40%;
 }
 
-.searchForm button {
-  border-left: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 10px;
-  width: 100px;
-  text-size-adjust: 100%;
-  font: normal 300 0.8rem 'Lato', sans-serif;
-  color: #fff;
-  border: 1px solid rgb(251, 81, 147);
-  background-image: linear-gradient(to bottom right, rgb(251, 81, 147), rgba(0, 0, 0, 0.829));
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
 .searchForm button:hover {
-  background-color:  rgba(0, 0, 0, 0.829);
+  background-color: rgba(0, 0, 0, 0.829);
   transform: scale(1.1);
   color: #fff;
 }
 
-.locationCard{
-  background-color: rgb(251, 81, 147) ;
+.locationCard {
+  background-color: rgb(251, 81, 147);
   margin-bottom: 10vh;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
 .locationCard button:hover {
-  background-color:  rgba(0, 0, 0, 0.829);
+  background-color: rgba(0, 0, 0, 0.829);
   transform: scale(1.1);
   color: #fff;
 }
 
 .locationCard:nth-child(odd) {
-  background-color: #cd4075 ;
+  background-color: #cd4075;
   border-radius: 0.5rem;
-     
 }
 
 .locationCard:nth-child(even) {
   border-radius: 0.5rem;
-   
 }
 
-.locationImg{
+.locationImg {
   width: 9vh;
   height: 10vh;
 }
 
-.locRegion{
+.locRegion {
   font-weight: bold;
   font-size: 1rem;
 }
 
-.locCoun{
+.locCoun {
   font-size: 0.8rem;
   font-weight: bold;
 }

@@ -15,7 +15,7 @@
 
 body {
   background-color: rgb(251, 81, 147);
-  color:  #fff;
+  color: #fff;
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 400;
@@ -24,9 +24,10 @@ body {
 
 html {
   scroll-behavior: smooth;
- /* font-size: 62.5%;*/
+
+  /* font-size: 62.5%; */
   overflow-x: hidden;
-} 
+}
 
 section {
   padding: 2rem 6rem;
