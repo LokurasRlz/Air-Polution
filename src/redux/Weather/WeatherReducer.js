@@ -16,7 +16,7 @@ export const loadingStart = (payload) => ({
   payload,
 });
 
-const reducer = (state = initialState, action) => {
+const weatherReducer = (state = initialState, action) => {
   if (action.type === FETCH_WEATHER) {
     return { weather: action.payload };
   } if (action.type === LOADING_START) {
@@ -25,4 +25,4 @@ const reducer = (state = initialState, action) => {
   return state;
 };
 
-export default reducer;
+export default weatherReducer;
