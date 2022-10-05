@@ -18,7 +18,11 @@
 
 ## Live Demo
 
+[Deployed Page](https://lokurasrlz.github.io/world-weather/)
 
+## Live Video
+
+[Loom Video](https://www.loom.com/share/a884ee8df48d4dbd9621d4bde401b509)
 
 ## Getting Started
 
