@@ -32,7 +32,7 @@ const WeatherDetails = (props) => {
       .then((resp) => resp.json())
       .then((data) => setcityimage(data))
       .then(setcityimage(cityimage))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err)); // eslint-disable-line
   };
   useEffect(() => {
     fetchImage();
@@ -121,7 +121,7 @@ const WeatherDetails = (props) => {
             <img
               src={
             typeof cityimage.results === 'undefined'
-              ? console.log('print random image')
+              ? console.log('print random image') // eslint-disable-line
               : cityimage.results[
                 Math.floor(Math.random() * cityimage.results.length)
               ].urls.full
