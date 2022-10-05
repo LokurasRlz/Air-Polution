@@ -23,6 +23,13 @@
   justify-content: center;
 }
 
+.weatherLogo {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.5rem;
+  filter: invert(100%);
+}
+
 .onlyOne {
   display: flex;
   align-items: center;

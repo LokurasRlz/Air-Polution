@@ -15,6 +15,15 @@
   border-radius: 10px;
 }
 
+.searchResults button:hover {
+  background-color: rgb(251, 81, 147);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: #fff 0px 0px 10px;
+  transition: all 0.2s;
+
+}
+
 .search .results {
   text-align: center;
   font: normal 300 1.2rem 'Lato', sans-serif;
@@ -66,6 +75,14 @@
 .locationCard{
   background-color: rgb(251, 81, 147) ;
   margin-bottom: 10vh;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.locationCard button:hover {
+  background-color:  rgba(0, 0, 0, 0.829);
+  transform: scale(1.1);
+  color: #fff;
 }
 
 .locationCard:nth-child(odd) {
@@ -77,6 +94,21 @@
 .locationCard:nth-child(even) {
   border-radius: 0.5rem;
    
+}
+
+.locationImg{
+  width: 9vh;
+  height: 10vh;
+}
+
+.locRegion{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.locCoun{
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {

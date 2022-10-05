@@ -10,10 +10,11 @@ Array [
     >
       <img
         alt="cloud logo"
-        src="179.png"
+        className="weatherLogo"
+        src="weather.png"
       />
       <h1>
-        Weather Today
+        World Weather
       </h1>
     </div>
     <ul
@@ -70,50 +71,38 @@ Array [
     </ul>
   </div>,
   <div
-    className="helper"
+    className="search"
   >
-    <div
-      className="search"
+    <form
+      className="searchForm"
+      onSubmit={[Function]}
     >
-      <form
-        className="searchForm"
-        onSubmit={[Function]}
-      >
-        <input
-          onChange={[Function]}
-          placeholder="Enter a Location"
-          required={true}
-          type="text"
-          value=""
-        />
-        <button
-          type="submit"
-        >
-          Search
-        </button>
-      </form>
-      <h1
-        className="results"
-      >
-        Search Results
-      </h1>
-      <div
-        className="searchResults"
+      <input
+        onChange={[Function]}
+        placeholder="Enter a Location"
+        required={true}
+        type="text"
+        value=""
       />
-      <p
-        className="notFound"
+      <button
+        type="submit"
       >
-        Nothing to show yet! start typing to begin search
-      </p>
-    </div>
+        Search
+      </button>
+    </form>
     <h1
-      className="suggestions"
+      className="results"
     >
-      Suggested locations
+      Search Results
     </h1>
     <div
-      className="capital"
+      className="searchResults"
     />
+    <p
+      className="notFound"
+    >
+      Nothing to show yet! Start typing to begin search!
+    </p>
   </div>,
 ]
 `;
@@ -127,10 +116,11 @@ exports[`Testing if pages render correctly Testing Header 1`] = `
   >
     <img
       alt="cloud logo"
-      src="179.png"
+      className="weatherLogo"
+      src="weather.png"
     />
     <h1>
-      Weather Today
+      World Weather
     </h1>
   </div>
   <ul

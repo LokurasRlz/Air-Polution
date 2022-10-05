@@ -34,11 +34,14 @@
   padding: 0 10px;
   margin-bottom: 2vh;
   background-image: rgb(251, 81, 147);
+  display: flex;
+  flex-direction: column;
 }
 
 .cardsIcon {
   align-items: center;
   justify-content: center;
+  align-self: center;
 }
 
 .cardsText{
@@ -68,7 +71,7 @@
 
 .cityImage {
   max-width: 30vw;
-  max-height: 50vw;
+  max-height: 23vw;
   min-height: 15rem;
   min-width: 20rem;
   margin: 0 auto;

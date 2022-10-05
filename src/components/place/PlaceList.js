@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-import icon from '../images/day/179.png';
+import weather from '../../img/weather.png';
 import './Place.css';
 
 const PlaceList = (props) => {
@@ -12,7 +12,7 @@ const PlaceList = (props) => {
     <div className="indiCap">
       <button className="locationCard" type="button" onClick={() => navigate(`/details/${capital}`)}>
         <div className="infoWrapper">
-          <img src={icon} alt="cloud logo" />
+          <img src={weather} alt="cloud logo" />
           <div className="locationInfo">
             <h1 className="locName">{capital}</h1>
             <p className="locCoun">{country}</p>

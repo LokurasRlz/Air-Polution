@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate } from 'react-router-dom';
 import getAutoComplete from '../../redux/autoComplete/autoComplete';
-import icon from '../images/day/179.png';
+import map2 from '../../img/map2.png';
 import './AutoForm.css';
 
 const AutoForm = () => {
@@ -31,7 +31,7 @@ const AutoForm = () => {
             <div className="searchResults">
               { newLocation && newLocation.map((location) => (
                 <button className="locationCard" type="button" key={uuidv4()} onClick={() => navigate(`/details/${location.name}`)}>
-                  <img src={icon} alt="logo" />
+                  <img src={map2} className="locationImg" alt="logo" />
                   <div className="locationInfo">
                     <h1 className="locName">{location.name}</h1>
                     <p className="locRegion">{location.region}</p>
@@ -46,7 +46,7 @@ const AutoForm = () => {
         (!loading && newLocation.length === 0 && search !== '') ? <p className="notFound">Search not found</p> : null
       }
       {
-        (!loading && search === '') ? <p className="notFound">Nothing to show yet! start typing to begin search</p> : null
+        (!loading && search === '') ? <p className="notFound">Nothing to show yet! Start typing to begin search!</p> : null
       }
     </div>
   );

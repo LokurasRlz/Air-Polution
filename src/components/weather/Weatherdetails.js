@@ -38,6 +38,10 @@ const WeatherDetails = (props) => {
     fetchImage();
   }, [cityvalue]);
 
+  // setInterval(() => {
+  //   fetchImage();
+  // }, 10000);
+
   return (
     <>
       <div>
@@ -117,7 +121,7 @@ const WeatherDetails = (props) => {
             <img
               src={
             typeof cityimage.results === 'undefined'
-              ? console.log('prinintg ond oudf d')
+              ? console.log('print random image')
               : cityimage.results[
                 Math.floor(Math.random() * cityimage.results.length)
               ].urls.full
