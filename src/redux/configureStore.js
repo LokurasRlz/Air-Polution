@@ -2,7 +2,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import placeReducer from './place/placeReducer';
-import weatherReducer from './weather/weatherReducer';
+import weatherReducer from './weather/weatherReducer'; // eslint-disable-line
 import autoCompleteReducer from './autoComplete/autoCompleteReducer';
 
 const reducer = combineReducers({

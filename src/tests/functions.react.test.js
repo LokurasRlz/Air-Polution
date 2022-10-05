@@ -1,7 +1,7 @@
 import fetchedData from '../mocks/getCities';
 import fetchCurrent from '../mocks/getWeather';
 import * as red from '../redux/place/placeReducer';
-import * as redWeather from '../redux/weather/weatherReducer';
+import * as redWeather from '../redux/weather/weatherReducer'; // eslint-disable-line
 import * as redAuto from '../redux/autoComplete/autoCompleteReducer';
 
 describe('Get all Cities', () => {
