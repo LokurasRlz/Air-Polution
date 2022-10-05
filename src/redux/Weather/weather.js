@@ -1,4 +1,4 @@
-import { fetchWeather, loadingStart } from './WeatherReducer'; 
+import { fetchWeather, loadingStart } from './WeatherReducer';
 
 const apiKey = '2bed54dd4eb346aaa57212632220310';
 
