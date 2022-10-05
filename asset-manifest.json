@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/World-Weather/static/css/main.a794c4d9.css",
-    "main.js": "/World-Weather/static/js/main.9465a808.js",
-    "static/media/gauge.png": "/World-Weather/static/media/gauge.fcf930a1940d8a9e83fd.png",
-    "static/media/humidity.png": "/World-Weather/static/media/humidity.c8ee914ee96a5293ae25.png",
-    "static/media/weather.png": "/World-Weather/static/media/weather.35d0fcc7824b6c1c89c6.png",
-    "static/media/map2.png": "/World-Weather/static/media/map2.52d117cd8c33531807c1.png",
-    "static/media/compass.png": "/World-Weather/static/media/compass.78043d2ad7150ee687bd.png",
-    "static/media/precipitacion.png": "/World-Weather/static/media/precipitacion.b98093f508954ec203e5.png",
-    "static/media/celsius.png": "/World-Weather/static/media/celsius.2b51161ff798c2e34ecc.png",
-    "static/media/cloud.png": "/World-Weather/static/media/cloud.3846cbb1bec50a809d1d.png",
-    "index.html": "/World-Weather/index.html",
-    "main.a794c4d9.css.map": "/World-Weather/static/css/main.a794c4d9.css.map",
-    "main.9465a808.js.map": "/World-Weather/static/js/main.9465a808.js.map"
+    "main.css": "/world-weather/static/css/main.a794c4d9.css",
+    "main.js": "/world-weather/static/js/main.c31d9afd.js",
+    "static/media/gauge.png": "/world-weather/static/media/gauge.fcf930a1940d8a9e83fd.png",
+    "static/media/humidity.png": "/world-weather/static/media/humidity.c8ee914ee96a5293ae25.png",
+    "static/media/weather.png": "/world-weather/static/media/weather.35d0fcc7824b6c1c89c6.png",
+    "static/media/map2.png": "/world-weather/static/media/map2.52d117cd8c33531807c1.png",
+    "static/media/compass.png": "/world-weather/static/media/compass.78043d2ad7150ee687bd.png",
+    "static/media/precipitacion.png": "/world-weather/static/media/precipitacion.b98093f508954ec203e5.png",
+    "static/media/celsius.png": "/world-weather/static/media/celsius.2b51161ff798c2e34ecc.png",
+    "static/media/cloud.png": "/world-weather/static/media/cloud.3846cbb1bec50a809d1d.png",
+    "index.html": "/world-weather/index.html",
+    "main.a794c4d9.css.map": "/world-weather/static/css/main.a794c4d9.css.map",
+    "main.c31d9afd.js.map": "/world-weather/static/js/main.c31d9afd.js.map"
   },
   "entrypoints": [
     "static/css/main.a794c4d9.css",
-    "static/js/main.9465a808.js"
+    "static/js/main.c31d9afd.js"
   ]
 }
