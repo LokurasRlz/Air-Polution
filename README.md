@@ -1,7 +1,6 @@
-# React-Group-Project
 # Project Name
 
-> World Weather App
+### World Weather App
 
 # Description
 
